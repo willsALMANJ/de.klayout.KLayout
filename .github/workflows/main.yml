@@ -1,6 +1,8 @@
 name: check-for-updates
 
 on:
+  repository_dispatch:
+    types: debug-updater
   schedule:
     - cron: "0 2 * * *"
 
