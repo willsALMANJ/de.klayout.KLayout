@@ -1,6 +1,6 @@
 app-id: de.klayout.KLayout
 runtime: org.kde.Platform
-runtime-version: '5.14'
+runtime-version: '5.11'
 sdk: org.kde.Sdk
 command: klayout
 finish-args:
