@@ -49,13 +49,13 @@ modules:
       - desktop-file-edit --set-icon=${FLATPAK_ID} /app/share/applications/${FLATPAK_ID}.desktop
     sources:
       - type: archive
-        url: https://www.klayout.org/downloads/source/klayout-0.26.6.tar.gz
-        sha256: a7446a837b508d93a9b760e0f221eeabc30dc720255010c9b184269c892a5592
+        url: https://www.klayout.org/downloads/source/klayout-0.26.7.tar.gz
+        sha256: 7ef51a479340316a7071a02310240661421277db8ab230d043353960d05acdc1
         x-checker-data:
           type: html
           url: https://www.klayout.de/build.html
           version-pattern: klayout-([\d\.]+).tar.gz
           url-template: https://www.klayout.org/downloads/source/klayout-$version.tar.gz
-        size: 49422639
+        size: 49431097
       - type: file
         path: de.klayout.KLayout.metainfo.xml
