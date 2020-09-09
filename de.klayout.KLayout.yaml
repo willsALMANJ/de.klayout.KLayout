@@ -1,6 +1,6 @@
 app-id: de.klayout.KLayout
 runtime: org.kde.Platform
-runtime-version: '5.14'
+runtime-version: '5.15'
 sdk: org.kde.Sdk
 command: klayout
 finish-args:
@@ -11,8 +11,10 @@ finish-args:
   - --device=dri
 modules:
   - name: gdbm
-    config-opts:
-      - --enable-libgdbm-compat
+    build-options:
+      cflags: -g -O2 -fcommon
+      config-opts:
+        - --enable-libgdbm-compat
     sources:
       - type: archive
         url: https://ftp.gnu.org/gnu/gdbm/gdbm-1.18.1.tar.gz
