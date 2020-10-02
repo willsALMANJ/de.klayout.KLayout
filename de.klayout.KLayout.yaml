@@ -31,14 +31,14 @@ modules:
       - --enable-shared
     sources:
       - type: archive
-        url: https://cache.ruby-lang.org/pub/ruby/2.7/ruby-2.7.1.tar.gz
-        sha256: d418483bdd0000576c1370571121a6eb24582116db0b7bb2005e90e250eae418
+        url: https://cache.ruby-lang.org/pub/ruby/2.7/ruby-2.7.2.tar.gz
+        sha256: 6e5706d0d4ee4e1e2f883db9d768586b4d06567debea353c796ec45e8321c3d4
         x-checker-data:
           type: html
           url: https://www.ruby-lang.org/en/downloads/
           version-pattern: The current stable version is ([\d\.]+)\.
           url-pattern: (https://cache.ruby-lang.org/pub/ruby/[\d\.]+/ruby-[\d\.]+.tar.gz)
-        size: 16816471
+        size: 16836767
 
   - name: klayout
     buildsystem: simple
